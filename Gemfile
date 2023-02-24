@@ -50,3 +50,6 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Add dotenv gem
 gem 'dotenv-rails', groups: [:development, :test]
+
+# gem devise for authentication
+gem 'devise'
