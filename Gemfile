@@ -46,5 +46,7 @@ group :development do
   # gem "spring"
 end
 
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 # Add dotenv gem
 gem 'dotenv-rails', groups: [:development, :test]
