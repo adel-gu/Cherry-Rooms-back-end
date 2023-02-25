@@ -42,7 +42,6 @@ group :development, :test do
 
   # Use as a defualt testing library for the app
   gem 'rspec-rails', '~> 6.0.0'
-
 end
 
 group :development do
