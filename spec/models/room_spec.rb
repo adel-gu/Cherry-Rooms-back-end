@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Room, type: :model do
   user = User.create(f_name: 'Tom')
   subject do
-    Room.new(user: user,
+    Room.new(user:,
              name: 'Luxury',
              beds: 2,
              price: 10.99,
@@ -16,7 +16,7 @@ RSpec.describe Room, type: :model do
     subject.name = nil
     expect(subject).to_not be_valid
   end
-  
+
   it 'is not valid when name is an empty string' do
     subject.name = ''
     expect(subject).to be_invalid
@@ -45,7 +45,7 @@ RSpec.describe Room, type: :model do
     subject.price = 'Fourty three'
     expect(subject).to be_invalid
   end
-  
+
   it 'is not valid when description is empty' do
     subject.description = ''
     expect(subject).to be_invalid
@@ -65,5 +65,4 @@ RSpec.describe Room, type: :model do
     subject.image = nil
     expect(subject).to be_invalid
   end
-
 end
