@@ -1,6 +1,7 @@
 class Room < ApplicationRecord
   belongs_to :user
-
+  has_many :reservations
+  
   validates :name, format: { with: /[a-zA-Z]/ }, presence: true
   validates :beds, numericality: { only_integer: true, greater_than_or_equal_to: 0 }, presence: true
   validates :price, numericality: { greater_than_or_equal_to: 0 }, presence: true
