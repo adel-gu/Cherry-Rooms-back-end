@@ -14,6 +14,22 @@ class Api::V1::RoomsController < ApplicationController
     render json: @room
   end
 
+  # POST /rooms
+  def create
+    @room = Room.new(**room_params, user_id: @user)
+
+    if @room.save
+      render json: @room, status: :created, location: @room
+    else
+      render json: @room.errors, status: :unprocessable_entity
+    end
+  end
+
+  # DELETE /rooms/1
+  def destroy
+    @room.destroy
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
