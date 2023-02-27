@@ -31,7 +31,7 @@ RSpec.describe Reservation, type: :model do
   end
 
   it 'dates are in right format' do
-    subject.to_date = "One week"
+    subject.to_date = 'One week'
     subject.save
     expect(subject).to be_invalid
   end
