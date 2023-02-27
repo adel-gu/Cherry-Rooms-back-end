@@ -12,20 +12,26 @@ RSpec.describe Reservation, type: :model do
 
   subject { Reservation.new(from_date: '06/23/2023', to_date: '09/12/2023', number_of_persons: 6, user:, room:) }
 
-  it 'is not valid without a name' do
+  it 'is not valid without a from_date' do
     subject.from_date = nil
     subject.save
     expect(subject).to_not be_valid
   end
 
-  it 'is not valid when name is an empty string' do
+  it 'is not valid without to_date' do
     subject.to_date = nil
     subject.save
     expect(subject).to be_invalid
   end
 
-  it 'is not valid when name is not a string' do
+  it 'is not valid when number of persons is less than zero' do
     subject.number_of_persons = 0
+    subject.save
+    expect(subject).to be_invalid
+  end
+
+  it 'dates are in right format' do
+    subject.to_date = "One week"
     subject.save
     expect(subject).to be_invalid
   end
