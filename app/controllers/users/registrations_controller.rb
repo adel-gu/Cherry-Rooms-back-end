@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Users::RegistrationsController < Devise::RegistrationsController
   include RackSessionFix
   before_action :configure_sign_up_params, only: [:create]
@@ -20,7 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       }
     else
       render json: {
-        status: {message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}"}
+        status: { message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}" }
       }, status: :unprocessable_entity
     end
   end
