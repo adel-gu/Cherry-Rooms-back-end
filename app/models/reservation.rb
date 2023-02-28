@@ -18,5 +18,3 @@ class Reservation < ApplicationRecord
     errors.add(:to_date, 'must be after the from date')
   end
 end
-
-# User.create(:f_name => "Korra", :email => "ddd@gmail.com", :password => 123456)
