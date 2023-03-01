@@ -6,7 +6,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   protected
 
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:f_name, :avatar])
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[f_name avatar])
   end
 
   private
