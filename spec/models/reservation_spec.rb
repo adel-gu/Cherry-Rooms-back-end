@@ -10,7 +10,7 @@ RSpec.describe Reservation, type: :model do
                   image: 'https://cdn.dribbble.com/users/9685/screenshots/997495/avatarzzz.gif',
                   city: 'Islamabad')
 
-  subject { Reservation.new(from_date: '06/23/2023', to_date: '09/12/2023', number_of_persons: 6, user:, room:) }
+  subject { Reservation.new(from_date: '06/05/2023', to_date: '09/12/2023', number_of_persons: 6, user:, room:) }
 
   it 'is not valid without a from_date' do
     subject.from_date = nil
