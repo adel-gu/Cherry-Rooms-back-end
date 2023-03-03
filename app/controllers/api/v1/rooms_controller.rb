@@ -16,7 +16,7 @@ class Api::V1::RoomsController < ApplicationController
 
   # POST /rooms
   def create
-    @room = Room.new(**room_params, user_id: @user)
+    @room = Room.new(room_params)
 
     if @room.save
       render json: @room, status: :created, location: @room
@@ -43,6 +43,6 @@ class Api::V1::RoomsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def room_params
-    params.require(:room).permit(:name, :beds, :price, :description, :image, :city)
+    params.require(:room).permit(:name, :beds, :price, :description, :image, :city, :user_id)
   end
 end

@@ -8,4 +8,5 @@ class Room < ApplicationRecord
   validates :description, length: { maximum: 250 }, presence: true
   validates :image, presence: true
   validates :city, presence: true
+  validates :user_id, presence: true
 end
