@@ -17,9 +17,9 @@ class Api::V1::RoomsController < ApplicationController
   # POST /rooms
   def create
     @room = Room.new(room_params)
-
+    @room.user = @user
     if @room.save
-      render json: @room, status: :created, location: @room
+      render json: @room, status: :created
     else
       render json: @room.errors, status: :unprocessable_entity
     end
@@ -27,7 +27,11 @@ class Api::V1::RoomsController < ApplicationController
 
   # DELETE /rooms/1
   def destroy
-    @room.destroy
+    if @room.destroy
+      render json: { success: true, message: 'Room deleted successfully' }, status: :ok
+    else
+      render json: @room.errors, status: :unprocessable_entity
+    end
   end
 
   private
