@@ -19,7 +19,9 @@ class Api::V1::RoomsController < ApplicationController
     @room = Room.new(room_params)
     @room.user = @user
     if @room.save
-      render json: @room, status: :created
+      render json: {
+        status: { success: true, message: 'Room created successfully' },
+      }
     else
       render json: @room.errors, status: :unprocessable_entity
     end
