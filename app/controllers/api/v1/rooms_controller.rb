@@ -20,7 +20,7 @@ class Api::V1::RoomsController < ApplicationController
     @room.user = @user
     if @room.save
       render json: {
-        status: { success: true, message: 'Room created successfully' },
+        status: { success: true, message: 'Room created successfully' }
       }
     else
       render json: @room.errors, status: :unprocessable_entity
