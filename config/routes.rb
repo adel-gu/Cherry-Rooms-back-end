@@ -10,6 +10,7 @@ Rails.application.routes.draw do
                      }
   namespace :api do
     namespace :v1 do
+      resources :current_user, only: [:index]
       resources :reservations, only: [:index, :destroy]
       resources :rooms, only: [:index, :show, :new, :create, :destroy] do
         resources :reservations , only: [:create]
