@@ -19,20 +19,8 @@ REQUIRED SECTIONS:
 - Acknowledgements
 - License
 
-OPTIONAL SECTIONS:
-- FAQ
-
 After you're finished please remove all the comments and instructions!
 -->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -42,6 +30,11 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Website Mockup 📱 💻 🖥️](#screenshots)
+    - [🖺 Entity Relationship Diagram](#er-diagram)
+  - [<img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board](#kanban-board)
+  - [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="23" height="20"/> React Frontend](#react-frontend)
+  - [<img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/spiral-notepad_1f5d2-fe0f.png" width="23" height="20"/> API Documentation](#api-docs)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -55,22 +48,19 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Cherry Rooms Backend <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Cherry Rooms Backend** is a luxury room rental service back-end where users can first signup and log-in and then create new rooms by filling in all the information about their luxury room, then reserve existing rooms , delete rooms, and delete reservations. It is built and connected by using two different repos, including Back-end(Rails) and Front-end(React/Redux).
+![Cherry Rooms](../../../../../Downloads/as.jpg)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -82,7 +72,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>Rails</li>
   </ul>
 </details>
 
@@ -97,21 +87,47 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Luxary Rooms List endpoint]**
+- **[JWT Authorization with Devise upon login and register]**
+- **[Authenticated Users can create/delete as removed a Room]**
+- **[Authenticated Users can reserve/remove a Reservation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- Kanban Board -->
+
+## <img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board <a name="kanban-board"></a>
+
+### Kanban Board
+
+- [Kanban Board]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- API Docs -->
+
+## <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/spiral-notepad_1f5d2-fe0f.png" width="23" height="20"/> API Documentation<a name="api-docs"></a>
+
+- Here is the API documentation of the project [Cherry Rooms API-Docs](https://cherry-room-service.onrender.com/api-docs/index.html)
+  ![api-docs](https://user-images.githubusercontent.com/84629565/215859675-517549c1-a4ed-46e9-97c9-069cf257ff03.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ER DIAGRAM-->
+
+## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
+
+![er-diagram]()
+
+<!-- React Frontend -->
+
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="23" height="20"/> React Frontend <a name="react-frontend"></a>
+
+- Here is the Frontend part of the project [Cherry Rooms front-end](https://github.com/adel-gu/Cherry-Rooms-front-end)
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo :rocket:](https://cherryrooms.netlify.app/) :smiley:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,103 +135,68 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
+
+- Clone the repository to your local machine. - ** git clone `https://github.com/adel-gu/Cherry-Rooms-back-end.git` **
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
+`Git` and `Ruby`
 
-<!--
-Example command:
-
-```sh
+```
  gem install rails
 ```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
+  bundle install
 ```
---->
 
-### Run tests
+Create a Database (Mandatory)
 
-To run tests, run the following command:
+- Run `rake db:create:all` and `rake db:migrate`
+- Run `rake db:seed` to populate the database with some sample data if you add any.
+- Run `rails s` to start the server.
+- In your browser, go to http://localhost:3000.
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+Run tests
 
 ```
- -->
+bundle exec rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors (4 Micronauts) <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Zuhaib Amjad**
 
-👤 **Author1**
+- GitHub: [@Zuhaib042](https://github.com/Zuhaib042)
+- Twitter: [@Zuhaib042](https://twitter.com/Zuhaib042)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zuhaib-amjad/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Adel Guitoun**
 
-👤 **Author2**
+- GitHub: [@adel-gu](https://github.com/adel-gu)
+- Twitter: [@GuitounAdel](https://twitter.com/GuitounAdel)
+- LinkedIn: [adelguitoun](https://linkedin.com/in/adelguitoun)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Aminu Rabiu**
+
+- GitHub: [@arabiu033](https://github.com/arabiu033)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/larabiu033)
+
+👤 **Joel Kugonza**
+
+- GitHub: [@Joel-100](https://github.com/Joel-100)
+- Twitter: [@Joel Kugonza](https://twitter.com/JoelKugonza)
+- LinkedIn: [Joel Kugonza](https://www.linkedin.com/in/joel-kugonza/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +204,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Admin Roles and access to add New lux Rooms]**
+- [ ] **[Keep count of rooms using addtional attribute]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +223,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,25 +231,10 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank:
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+- [Microverse](https://www.microverse.org/)
+- Code Reviewers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -282,7 +243,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
