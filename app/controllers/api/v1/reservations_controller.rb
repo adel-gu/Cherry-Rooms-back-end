@@ -12,7 +12,7 @@ class Api::V1::ReservationsController < ApplicationController
     @reservation.update(user: current_user, room: Room.find(params[:room_id]))
 
     if @reservation.save
-      render json: @reservation, status: :created, location: @reservation
+      render json: @reservation, status: :created
     else
       render json: @reservation.errors, status: :unprocessable_entity
     end
@@ -20,15 +20,15 @@ class Api::V1::ReservationsController < ApplicationController
 
   # DELETE /reservation/1
   def destroy
-    @reservation.destroy
+    @reservation = Reservation.find(params[:id])
+    if @reservation.destroy
+      render json: { success: true, message: 'Reservation deleted successfully' }, status: :ok
+    else
+      render json: @reservation.errors, status: :unprocessable_entity
+    end
   end
 
   private
-
-  # Use callbacks to share common setup or constraints between actions.
-  def set_reservation
-    @reservation = Reservation.find(params[:id])
-  end
 
   # Only allow a list of trusted parameters through.
   def reservation_params
