@@ -83,6 +83,5 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: Cherry_Rooms_back_end_production
-  username: Cherry_Rooms_back_end
-  password: <%= ENV["CHERRY_ROOMS_BACK_END_DATABASE_PASSWORD"] %>
