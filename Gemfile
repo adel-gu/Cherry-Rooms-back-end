@@ -62,3 +62,5 @@ gem 'devise'
 gem 'devise-jwt'
 # jsonapi serializer
 gem 'jsonapi-serializer'
+
+gem 'rswag'
