@@ -55,7 +55,8 @@ After you're finished please remove all the comments and instructions!
 # 📖 Cherry Rooms Backend <a name="about-project"></a>
 
 **Cherry Rooms Backend** is a luxury room rental service back-end where users can first signup and log-in and then create new rooms by filling in all the information about their luxury room, then reserve existing rooms , delete rooms, and delete reservations. It is built and connected by using two different repos, including Back-end(Rails) and Front-end(React/Redux).
-![Cherry Rooms](../../../../../Downloads/as.jpg)
+![Cherry Rooms](https://user-images.githubusercontent.com/96683843/224085310-3b02ee0d-be29-4804-be38-ea62832f740b.jpg)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,7 +100,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Kanban Board
 
-- [Kanban Board]()
+- [Kanban Board](https://github.com/users/adel-gu/projects/4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,8 +116,9 @@ After you're finished please remove all the comments and instructions!
 <!-- ER DIAGRAM-->
 
 ## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
+![re](https://user-images.githubusercontent.com/96683843/224085782-8284655e-cede-4c83-9fd2-499af406d889.jpg)
 
-![er-diagram]()
+
 
 <!-- React Frontend -->
 
