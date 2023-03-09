@@ -1,5 +1,5 @@
 require 'swagger_helper'
-​
+
 RSpec.describe 'api/v1/current_user', type: :request do
   path '/signup' do
     post 'Creates a user account to generate a token' do
@@ -27,7 +27,7 @@ RSpec.describe 'api/v1/current_user', type: :request do
       end
     end
   end
-  ​
+
   path '/login' do
     post 'You need to sign in so the servers can autenticate you' do
       tags 'User Authentication'
@@ -41,11 +41,11 @@ RSpec.describe 'api/v1/current_user', type: :request do
         },
         required: %w[email password]
       }
-      ​
+
       response '200', 'User logged in successfully' do
         run_test!
       end
-      ​
+
       response '401', 'Logged in failure' do
         let(:user) { 'invalid' }
         run_test!

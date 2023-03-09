@@ -1,5 +1,5 @@
 require 'swagger_helper'
-​
+
 RSpec.describe 'api/v1/reservations', type: :request do
   path '/api/v1/reservations' do
     get('list reservations') do
@@ -18,7 +18,7 @@ RSpec.describe 'api/v1/reservations', type: :request do
       end
     end
   end
-  ​
+
   path '/api/v1/reservations/{id}' do
     delete('delete reservation') do
       tags 'Reservation'
@@ -27,7 +27,6 @@ RSpec.describe 'api/v1/reservations', type: :request do
       parameter name: 'id', in: :path, type: :string, description: 'id'
       response(200, 'successful') do
         let(:id) { '123' }
-        ​
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -39,7 +38,7 @@ RSpec.describe 'api/v1/reservations', type: :request do
       end
     end
   end
-  ​
+
   path '/api/v1/rooms/{room_id}/reservations' do
     post('create reservation') do
       tags 'Reservation'
