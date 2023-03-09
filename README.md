@@ -111,7 +111,8 @@ After you're finished please remove all the comments and instructions!
 ## <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/spiral-notepad_1f5d2-fe0f.png" width="23" height="20"/> API Documentation<a name="api-docs"></a>
 
 - Here is the API documentation of the project [Cherry Rooms API-Docs](https://cherry-room-service.onrender.com/api-docs/index.html)
-  ![api-docs](https://user-images.githubusercontent.com/84629565/215859675-517549c1-a4ed-46e9-97c9-069cf257ff03.png)
+  ![API-docs](https://user-images.githubusercontent.com/96683843/224128034-40945166-3ae4-4599-8759-6fbafdcf8b5b.jpg)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
